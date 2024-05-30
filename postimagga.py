@@ -2,6 +2,7 @@ import requests
 import json
 import shutil
 import os
+from collections import defaultdict
 
 api_key = 'acc_fe01e1d58c18775'
 api_secret = '29c9a1af4521b845d6d9b7d3ec55a6b5'
@@ -26,7 +27,7 @@ def checkPaths(categories, classification_path):
 
 def classifyImage(image_paths, categories, classification_path):
     print(image_paths)
-    classifications = {}
+    classifications = defaultdict(list)
 
     # Crea el directorio principal si no existe
     os.makedirs(classification_path, exist_ok=True)
@@ -43,30 +44,34 @@ def classifyImage(image_paths, categories, classification_path):
                 files={'image': response.content}
             ).json()
 
-            assigned_category = None
-            for tag in data['result']['tags']:
-                for category in categories:
-                    if tag['confidence'] == 100 and tag['tag']['en'] == category:
-                        assigned_category = category
-                        break
+            # Ordenar las etiquetas por su nivel de confianza
+            sorted_tags = sorted(data['result']['tags'], key=lambda x: x['confidence'], reverse=True)
+            assigned_categories = []
+            for tag in sorted_tags:
+                category = tag['tag']['en']
+                assigned_categories.append(category)
+                if len(assigned_categories) == 2:
+                    break
 
-            if assigned_category:
-                # Crea el directorio de la categoría si no existe
-                category_path = os.path.join(classification_path, assigned_category)
-                os.makedirs(category_path, exist_ok=True)
+            if assigned_categories:
+                for assigned_category in assigned_categories:
+                    # Crea el directorio de la categoría si no existe
+                    category_path = os.path.join(classification_path, assigned_category)
+                    os.makedirs(category_path, exist_ok=True)
 
-                # Ruta completa del archivo guardado
-                file_path = os.path.join(category_path, filename)
+                    # Ruta completa del archivo guardado
+                    file_path = os.path.join(category_path, filename)
 
-                # Guardar la imagen en el directorio de la categoría
-                with open(file_path, 'wb') as f:
-                    f.write(response.content)
+                    # Guardar la imagen en el directorio de la categoría
+                    #Guardar la imagen en el directorio de la categoría
+                    with open(file_path, 'wb') as f:
+                        f.write(response.content)
 
-                classifications[image_path] = assigned_category
+                print(assigned_categories)    
+                classifications[image_path] = assigned_categories
             else:
                 print(f"No se pudo clasificar la imagen: {image_path}")
         else:
             print(f"Error fetching image: {image_path}")
 
     return classifications
-
