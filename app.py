@@ -27,7 +27,7 @@ def index():
         image_paths = image_urls
 
         # Clasificar las imágenes
-        checkPaths(CATEGORIES, CLASSIFICATION_PATH)
+        checkPaths(CLASSIFICATION_PATH)
         classifications = classifyImage(image_paths, CATEGORIES, CLASSIFICATION_PATH)
 
         return render_template('classify.html', classifications=classifications)
@@ -48,7 +48,7 @@ def classify():
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     file.save(file_path)
 
-    checkPaths(CATEGORIES, CLASSIFICATION_PATH)
+    checkPaths(CLASSIFICATION_PATH)
     # classifyImage(file_path, CATEGORIES, CLASSIFICATION_PATH)
     assigned_category = classifyImage(file_path, CATEGORIES, CLASSIFICATION_PATH)
     return render_template('classify.html', category=assigned_category)

@@ -12,17 +12,9 @@ CLASSIFICATION_PATH = 'clasificacion/'
 CATEGORIES = ['car', 'ship', 'bicycle']
 FILE_SEP = os.sep
 
-def checkPaths(categories, classification_path):
+def checkPaths(classification_path):
     if not os.path.exists(classification_path):
         os.mkdir(classification_path)
-    for category in categories:
-        target_path = os.path.join(classification_path, category)
-        try:
-            os.mkdir(target_path)
-        except FileExistsError:
-            print(f"El directorio '{target_path}' ya existe.")
-        else:
-            print(f"Se creó el directorio '{target_path}'.")
 
 
 def classifyImage(image_paths, categories, classification_path):
