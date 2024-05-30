@@ -26,26 +26,28 @@
 
  7. Si accedemos a localhost:5000, deberíamos tener acceso a la aplicación.
 
-![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/57b5fd31-375d-43a4-91b0-6b3918b607e5)
+![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/4070cb0a-63a3-40c2-94c9-771d128c9a55)
 
 
 COMO USAR LA APLICACIÓN:
 
 Una vez que la aplicación sea ejecutada en localhost:5000, vamos a ver una pantalla como la siguiente:
 
-![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/1021210c-5df3-4dfb-a681-a0b535ecf91b)
+![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/4070cb0a-63a3-40c2-94c9-771d128c9a55)
 
-Las imágenes que se muestran, se han obtenido a partir de urls públicas. Para determinar la clasificación de las mismas, se han ocupado las siguientes categorías 'car', 'ship' y 'bicycle'. Hay que recalcar que la aplicación, tiene un directorio llamado 'clasificacion', este directorio inicialmente, se va a encontrar vacio.
+
+Las imágenes que se muestran, se han obtenido a partir de urls públicas. Hay que recalcar que la aplicación, tiene un directorio llamado 'clasificacion', este directorio inicialmente, se va a encontrar vacio.
 
 ![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/04c1d08e-0103-46c1-9d12-18226dfb38f1)
 
 En la pantalla hay un botón que dice analizar, simplemente debemos hacer click en este botón, y la aplicación nos va a mostrar la clasificación de las imágenes que hemos seleccionado.
 
-![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/c3504552-46fc-46b3-aaaa-3654294da090)
+![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/571da980-eeb1-408b-b82d-0ea7abd5cfbc)
 
-Como se observa, las imágenes han sido clasificadas, en las categorías que se han definido anteriormente. Además, la aplicación obtiene las imágenes de la url y las descarga. Una vez que las descarga, las clasifica en diferentes directorios dentro de 'clasificacion', dependiendo de la categoría a la que corresponde cada imagen, como se ve a continuación:
+Como se observa, las imágenes han sido clasificadas. Como se ha solicitado mostrar los dos resultados de mayor confianza, se muestran dos categorias. Además, la aplicación obtiene las imágenes de la url y las descarga. Una vez que las descarga, las clasifica en diferentes directorios dentro de 'clasificacion', dependiendo de la categoría a la que corresponde cada imagen, como se ve a continuación:
 
-![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/fbf87808-9a12-4bbb-9e39-d7cfa6aa9401)
+![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/3bc08143-21a3-4c55-b785-c25d5c7ac0ce)
+
 
 
 
