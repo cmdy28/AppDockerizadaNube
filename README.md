@@ -4,6 +4,8 @@
  Pasos para la dockerización de la app.
  1. Primero, se debe asegurar de tener instalado Docker en la maquina.
  2. El proyecto de la aplicación con Flask, tiene un archivo llamado Dockerfile, este archivo permite crear la imagen Docker de la aplicación.
+
+
 ![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/76d80d0b-175c-4699-932b-7e5830a900ba)
 
  3. Para construir la imagen Docker de la aplicación, ejecutamos el siguiente comando:
