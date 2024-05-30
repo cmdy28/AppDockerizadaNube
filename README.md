@@ -31,14 +31,15 @@ Objetivo
 
  7. Si accedemos a localhost:5000, deberíamos tener acceso a la aplicación.
 
-![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/4070cb0a-63a3-40c2-94c9-771d128c9a55)
+![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/0362039d-d816-43d7-87b8-8d3b6c509be5)
+
 
 
 # VERIFICAR FUNCIONAMIENTO DE LA WEBAPP
 
 Una vez que la aplicación sea ejecutada en localhost:5000, vamos a ver una pantalla como la siguiente:
 
-![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/4070cb0a-63a3-40c2-94c9-771d128c9a55)
+![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/9797bc21-0951-4fcf-8716-474420155890)
 
 
 Las imágenes que se muestran, se han obtenido a partir de urls públicas. Hay que recalcar que la aplicación, tiene un directorio llamado 'clasificacion', este directorio inicialmente, se va a encontrar vacio.
@@ -47,11 +48,11 @@ Las imágenes que se muestran, se han obtenido a partir de urls públicas. Hay q
 
 En la pantalla hay un botón que dice analizar, simplemente debemos hacer click en este botón, y la aplicación nos va a mostrar la clasificación de las imágenes que hemos seleccionado.
 
-![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/571da980-eeb1-408b-b82d-0ea7abd5cfbc)
+![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/31b330c2-c0c4-41ee-b8e6-b024db74e6d1)
 
 Como se observa, las imágenes han sido clasificadas. Como se ha solicitado mostrar los dos resultados de mayor confianza, se muestran dos categorias. Además, la aplicación obtiene las imágenes de la url y las descarga. Una vez que las descarga, las clasifica en diferentes directorios dentro de 'clasificacion', dependiendo de la categoría a la que corresponde cada imagen, como se ve a continuación:
 
-![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/3bc08143-21a3-4c55-b785-c25d5c7ac0ce)
+![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/127f6f97-e255-41b4-8f41-2dfac5464e0f)
 
 
 NOTA: EN CASO DE REQUERIR CAMBIARLAS IMÁGENES, PUEDE HACERLO DESDE app.py en la variable image_urls, y modificar ahí las URLs de las neuvas imágenes.
