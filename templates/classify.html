@@ -27,6 +27,7 @@
       {% for image_path, category in classifications.items() %}
       <div class="col-md-2">
         <img src="{{ image_path }}" alt="{{ image_path }}" width="200" height="250" />
+        <center><a href="{{ image_path }}">url imagen</a></center>
         {% if category %}
         <p>Categoría: {{ category }}</p>
         {% else %}

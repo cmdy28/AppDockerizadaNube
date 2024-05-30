@@ -1,7 +1,12 @@
 # AppDockerizadaNube
- Aplicación de Clasificacion de imagenes Dockerizada
+# Aplicación de Clasificacion de imagenes Dockerizada
+Objetivo
+- Realizar una práctica de consumo de un servicio entregado como SaaS.
+- Explorar cómo todos los conceptos revisados hasta el momento confluyen en una solución real basada en La Nube.
+- Investigar Docker y dockerizar una aplicación
 
- Pasos para la dockerización de la app.
+
+# Pasos para la dockerización de la Web App
  1. Primero, se debe asegurar de tener instalado Docker en la maquina.
  2. El proyecto de la aplicación con Flask, tiene un archivo llamado Dockerfile, este archivo permite crear la imagen Docker de la aplicación.
 
@@ -29,7 +34,7 @@
 ![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/4070cb0a-63a3-40c2-94c9-771d128c9a55)
 
 
-COMO USAR LA APLICACIÓN:
+# VERIFICAR FUNCIONAMIENTO DE LA WEBAPP
 
 Una vez que la aplicación sea ejecutada en localhost:5000, vamos a ver una pantalla como la siguiente:
 
@@ -49,7 +54,7 @@ Como se observa, las imágenes han sido clasificadas. Como se ha solicitado most
 ![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/3bc08143-21a3-4c55-b785-c25d5c7ac0ce)
 
 
-
+NOTA: EN CASO DE REQUERIR CAMBIARLAS IMÁGENES, PUEDE HACERLO DESDE app.py en la variable image_urls, y modificar ahí las URLs de las neuvas imágenes.
 
 
 

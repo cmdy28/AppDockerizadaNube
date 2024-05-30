@@ -8,11 +8,11 @@ from postimagga import checkPaths, classifyImage, CATEGORIES, CLASSIFICATION_PAT
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = image_dir
 image_urls = [
-    'https://i.pinimg.com/236x/fd/e2/d8/fde2d833487f921bbe7dae56d7283eea.jpg',
-    'https://i.pinimg.com/236x/fd/33/87/fd33870762f6f94fd800935752af0d16.jpg',
-    'https://i.pinimg.com/236x/20/e2/cd/20e2cda116286ec86e75a36a5a079613.jpg',
-    'https://i.pinimg.com/236x/de/bb/8e/debb8eb8c90fdfff8f63078077d0d430.jpg',
-    'https://i.pinimg.com/474x/89/04/41/8904419e8970baa8a77efa72ef9a51c6.jpg'
+    'https://i.pinimg.com/236x/a0/b2/2d/a0b22d988c49953d08df3d226ef27c8b.jpg',
+    'https://i.pinimg.com/236x/6b/af/60/6baf6076bf2202e5bd1c0b86b36016b8.jpg',
+    'https://i.pinimg.com/236x/47/63/a1/4763a185bb41b50f10468abea03534cb.jpg',
+    'https://i.pinimg.com/236x/8f/af/fb/8faffbc8dea295806ccbe9f99ce2fbb2.jpg',
+    'https://i.pinimg.com/236x/e7/cf/4c/e7cf4cf3638e79677a825d8ec5b27283.jpg',
 ]
 
 # @app.route('/')
