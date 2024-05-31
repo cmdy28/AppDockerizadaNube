@@ -4,8 +4,8 @@ import shutil
 import os
 from collections import defaultdict
 
-api_key = 'acc_fe01e1d58c18775'
-api_secret = '29c9a1af4521b845d6d9b7d3ec55a6b5'
+api_key = 'miapikey'
+api_secret = 'miapisecret'
 image_dir = 'imagenes/'
 
 CLASSIFICATION_PATH = 'clasificacion/'
