@@ -8,7 +8,13 @@ Objetivo
 
 # Pasos para la dockerización de la Web App
  1. Primero, se debe asegurar de tener instalado Docker en la maquina.
- 2. El proyecto de la aplicación con Flask, tiene un archivo llamado Dockerfile, este archivo permite crear la imagen Docker de la aplicación.
+ 2. En el proyecto, nos dirijimos al archivo postimagga.py y reemplazamos nuestra apikey y la api_secret, por las credenciales que nos proporciona imagga, al crear la cuenta.
+
+    ![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/427e58f7-ef41-47f9-8c26-5e746e49b29b)
+
+Una vez modificado esto, la aplicación está lista para dockersizarse.
+
+ 4. El proyecto de la aplicación con Flask, tiene un archivo llamado Dockerfile, este archivo permite crear la imagen Docker de la aplicación.
 
 
 ![image](https://github.com/cmdy28/AppDockerizadaNube/assets/85966698/76d80d0b-175c-4699-932b-7e5830a900ba)
